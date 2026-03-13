@@ -1,0 +1,86 @@
+.BookTop {
+  width: 35%;
+  height: 65%;
+  background: #40a4c8;
+  border-radius: 0% 5% 5% 0%;
+  position: relative;
+}
+
+.Linie {
+  position: absolute;
+  width: 65%;
+  height: 2%;
+  background-color: #fff;
+  top: 25%;
+  right: 15%;
+  left: 15%;
+  border-radius: 1%;
+}
+
+.Second {
+  top: 30%;
+  left: 15%;
+  right: 15%;
+}
+
+.Third {
+  top: 35%;
+  left: 15%;
+  right: 15%;
+}
+
+.Primary {
+  width: 5%;
+  height: 63%;
+  top: 64%;
+  bottom: 64%;
+  background: rgb(222, 239, 247);
+}
+
+.Advanced {
+  width: 5%;
+  height: 63%;
+  top: 64%;
+  bottom: 64%;
+  background: rgb(222, 239, 247);
+}
+
+.Intermediate {
+  width: 5%;
+  height: 63%;
+  top: 64%;
+  bottom: 64%;
+  background: rgb(222, 239, 247);
+}
+
+.Proficiency {
+  width: 5%;
+  height: 63%;
+  top: 64%;
+  bottom: 64%;
+  background: rgb(222, 239, 247);
+}
+
+.IELTS {
+  width: 5%;
+  height: 63%;
+  top: 64%;
+  bottom: 64%;
+  background: rgb(222, 239, 247);
+}
+
+.TOEFL {
+  width: 5%;
+  height: 63%;
+  top: 64%;
+  bottom: 64%;
+  background: rgb(222, 239, 247);
+}
+
+.BookBottom {
+  width: 10%;
+  height: 65%;
+  background: #40a4c8;
+  position: relative;
+  border-radius: 5% 0% 0% 5%;
+}

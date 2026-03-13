@@ -5,35 +5,35 @@ import Spinner from "../../components/General/Spinner";
 import Order from "../../components/Order";
 
 class OrderPage extends React.Component {
-    state = {
+  state = {
     orders: [],
-    loading: false
-    };
+    loading: false,
+  };
 
-    componentDidMount() {
+  componentDidMount() {
     this.setState({ loading: true });
     axios
-        .get("/orders.json")
-        .then(response => {
+      .get("/courses.json")
+      .then((response) => {
         this.setState({ orders: Object.entries(response.data).reverse() });
-        })
-        .catch(err => console.log(err))
-        .finally(() => {
+      })
+      .catch((err) => console.log(err))
+      .finally(() => {
         this.setState({ loading: false });
-        });
-    }
+      });
+  }
 
-    render() {
+  render() {
     return (
-        <div>
+      <div>
         {this.state.loading ? (
-            <Spinner />
+          <Spinner />
         ) : (
-            this.state.orders.map(el => <Order key={el[0]} order={el[1]} />)
+          this.state.orders.map((el) => <Order key={el[0]} order={el[1]} />)
         )}
-        </div>
+      </div>
     );
-    }
+  }
 }
 
 export default OrderPage;

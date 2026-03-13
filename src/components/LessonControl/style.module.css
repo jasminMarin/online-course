@@ -1,0 +1,58 @@
+.LessonControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.LessonControl button {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 80px;
+  border: 1px solid #5cadcb;
+  cursor: pointer;
+  outline: none;
+}
+
+.LessonControl button:disabled {
+  background-color: #ac9980;
+  border: 1px solid #7e7365;
+  color: #ccc;
+  cursor: default;
+}
+.LessonControl button:hover:disabled {
+  background-color: #ac9980;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.Label {
+  padding: 10px;
+  font-weight: bold;
+  width: 100px;
+  text-align: right;
+}
+
+.LessonControl .Less {
+  background-color: #79c2dd;
+  color: white;
+}
+
+.LessonControl .More {
+  background-color: #40a4c8;
+  color: white;
+}
+
+.LessonControl .Less:hover,
+.LessonControl .Less:active {
+  background-color: #75c4e0;
+  color: white;
+}
+
+.LessonControl .More:hover,
+.LessonControl .More:active {
+  background-color: #40a4c8;
+  color: white;
+}
